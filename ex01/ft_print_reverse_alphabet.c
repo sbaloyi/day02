@@ -5,7 +5,7 @@ void ft_print_reverse_alphabet(void)
     char letter = 'z';
     while (letter >= 'a')
     {
-        putchar(letter);
+        ft_putchar(letter);
         letter--;
     }
 }
