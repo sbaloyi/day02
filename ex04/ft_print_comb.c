@@ -1,7 +1,8 @@
 #include <unistd.h>
 
-void ft_print_comb(void);
 void ft_putchar(char a);
+
+void ft_print_comb(void);
 
 int main()
 {
@@ -33,8 +34,8 @@ void ft_print_comb()
 	return;
 }
 
-void ft_putchar(char c)
+void ft_putchar(char a)
 {
-	write(1, &c, 1);
+	write(1, &a, 1);
 	return;
 }

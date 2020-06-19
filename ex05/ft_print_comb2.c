@@ -1,7 +1,9 @@
 #include <unistd.h>
 
-void ft_print_comb(void);
 void ft_putchar(char a);
+
+void ft_print_comb(void);
+
 
 int main()
 {
@@ -14,7 +16,7 @@ void ft_print_comb()
 	char a;
 	char b;
 	a = '0' - 1;
-		while(++a <= '9'){
+		while(++a < '9'){
 			b = a;
 			while(++b <= '9') {
 				if(!(a=='0' && b=='1')){
@@ -28,8 +30,8 @@ void ft_print_comb()
 	return;
 }
 
-void ft_putchar(char c)
+void ft_putchar(char a)
 {
-	write(1, &c, 1);
+	write(1, &a, 1);
 	return;
 }
