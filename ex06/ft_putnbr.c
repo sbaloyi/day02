@@ -1,23 +1,27 @@
-#include <stdio.h>
-
 #include <unistd.h>
 
 void ft_putnbr(int nb);
 void ft_putchar(char a);
 
 void ft_ptnbr(int nb) {
-	ft_putchar((char)nb);
+	if (nb < 10 && nb >= 0)
+	{
+		ft_putchar(nb + '0');
+	}
+	else if (nb >= 10)
+	{
+		ft_putnbr(nb / 10);
+		ft_putchar(nb % 10 + '0');
+		if (nb < 0)
+			ft_putchar('-');
+	}
+	else
+	{
+		ft_putchar('-');
+		ft_putnbr(nb * -1);
+	}
 }
 
 void ft_putchar(char a) {
 	write(1, &a, 1);
 }
-
-int main() {   
-	int number;
-	scanf("%d", &number);
-	ft_putnbr(number);
-	return 0;
-}
-
-
