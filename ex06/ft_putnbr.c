@@ -3,7 +3,7 @@
 void ft_putnbr(int nb);
 void ft_putchar(char a);
 
-void ft_ptnbr(int nb) {
+void ft_putnbr(int nb) {
 	if (nb < 10 && nb >= 0)
 	{
 		ft_putchar(nb + '0');
