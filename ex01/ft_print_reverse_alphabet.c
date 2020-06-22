@@ -15,4 +15,3 @@ void ft_print_reverse_alphabet(void)
 void ft_putchar(char a) {
 	  write(1, &a, 1);
 }
-}
