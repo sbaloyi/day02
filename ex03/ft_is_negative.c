@@ -1,7 +1,5 @@
 #include <unistd.h>
 
-#include <stdio.h>
-
 void ft_is_negative(int);
 void ft_putchar(char n);
 
