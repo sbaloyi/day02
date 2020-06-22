@@ -25,11 +25,9 @@ void ft_print_comb()
 			}
 		}
 	}
-	return;
 }
 
 void ft_putchar(char a)
 {
 	write(1, &a, 1);
-	return;
 }
