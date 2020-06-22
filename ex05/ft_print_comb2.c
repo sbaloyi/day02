@@ -32,8 +32,3 @@ void	ft_print_comb2(void)
 		num1++;
 	}
 }
-
-int main(){
-	ft_print_comb2();
-	return 0;
-}
