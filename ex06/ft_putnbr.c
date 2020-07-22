@@ -1,7 +1,8 @@
 #include <unistd.h>
 
-void ft_putnbr(int nb);
-void ft_putchar(char a);
+void ft_putchar(char a) {
+	write(1, &a, 1);
+}
 
 void ft_putnbr(int nb) {
 	if (nb < 10 && nb >= 0)
@@ -20,8 +21,4 @@ void ft_putnbr(int nb) {
 		ft_putchar('-');
 		ft_putnbr(nb * -1);
 	}
-}
-
-void ft_putchar(char a) {
-	write(1, &a, 1);
 }
