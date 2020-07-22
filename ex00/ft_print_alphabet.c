@@ -1,7 +1,8 @@
 #include <unistd.h>
 
-void ft_print_alphabet(void);
-void ft_putchar(char a);
+void ft_putchar(char a){
+	  write(1, &a, 1);
+}
 
 void ft_print_alphabet(void) {
 	char letter = 'a';
@@ -9,8 +10,4 @@ void ft_print_alphabet(void) {
 		ft_putchar(letter);
 		letter++;
 	}
-}
-
-void ft_putchar(char a){
-	  write(1, &a, 1);
 }
